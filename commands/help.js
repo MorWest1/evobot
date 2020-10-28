@@ -5,7 +5,7 @@ module.exports = {
   aliases: ["h"],
   description: "Display all commands and descriptions",
   execute(message) {
-    let commands = message.client.commands.array();
+    let commands = message.client.command.array();
 
     let helpEmbed = new MessageEmbed()
       .setTitle("Evobot Help")
